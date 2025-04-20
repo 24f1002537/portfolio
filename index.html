@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prakhar Kaushik | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts for modern typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+      color: #22223b;
+      margin: 0;
+    }
+    .navbar {
+      background: rgba(255,255,255,0.85);
+      box-shadow: 0 2px 8px rgba(30,41,59,0.06);
+    }
+    .hero {
+      background: linear-gradient(120deg, #38bdf8 0%, #818cf8 100%);
+      color: #fff;
+      border-radius: 18px;
+      padding: 48px 32px;
+      margin-bottom: 36px;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(30,41,59,0.09);
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+    .contact-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      transition: color 0.2s;
+    }
+    .contact-icons a:hover {
+      color: #fbbf24;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #2563eb;
+      margin-bottom: 16px;
+      border-left: 4px solid #38bdf8;
+      padding-left: 12px;
+      letter-spacing: 1px;
+    }
+    .card {
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(30,41,59,0.07);
+      border: none;
+      margin-bottom: 24px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 6px 24px rgba(30,41,59,0.13);
+    }
+    .table {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .skills-list li {
+      margin-bottom: 6px;
+      font-size: 1.07rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: linear-gradient(110deg, #f1f5f9 70%, #e0e7ff 100%);
+      border-radius: 12px;
+      padding: 24px 18px;
+      box-shadow: 0 2px 10px rgba(30,41,59,0.07);
+      transition: box-shadow 0.2s, transform 0.2s;
+      border: none;
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-card:hover {
+      box-shadow: 0 8px 32px rgba(56,189,248,0.13);
+      transform: translateY(-6px) scale(1.04);
+    }
+    .declaration {
+      font-size: 0.97rem;
+      color: #64748b;
+      margin-top: 20px;
+      text-align: center;
+      border-top: 1px solid #e0e7ef;
+      padding-top: 14px;
+    }
+    @media (max-width: 700px) {
+      .hero { padding: 32px 10px; }
+      .section-title { font-size: 1.2rem; }
+    }
+  </style>
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/2bdbb0e4e6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Prakhar Kaushik</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero mb-4">
+    <h1>Prakhar Kaushik</h1>
+    <p class="mb-3">Electronics & Communication Engineering Student<br>
+      Ajay Kumar Garg Engineering College</p>
+    <div class="contact-icons mt-3">
+      <a href="tel:+918800225800" title="Call"><i class="fas fa-phone"></i></a>
+      <a href="mailto:prakhar10official@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/prakhar--kaushik" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <div class="container mb-5">
+    <!-- Career Objective -->
+    <section class="mb-4">
+      <div class="section-title">Career Objective</div>
+      <div class="card p-3">
+        <p>
+          Motivated and detail-oriented Electronics and Communication Engineering student at Ajay Kumar Garg Engineering College with a strong foundation in digital design, Verilog coding, and circuit analysis. Passionate about applying theoretical knowledge to practical applications in the electronics domain. Seeking an internship to enhance my skills and contribute to innovative projects in digital systems, embedded systems, or hardware design.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="mb-4">
+      <div class="section-title">Education</div>
+      <div class="table-responsive">
+        <table class="table align-middle text-center">
+          <thead class="table-light">
+            <tr>
+              <th>Stream</th>
+              <th>Board/University</th>
+              <th>Percentage/CGPA</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>High School</td>
+              <td>CBSE Board</td>
+              <td>67.4</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>Intermediate</td>
+              <td>CBSE Board</td>
+              <td>67.4</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>B.Tech</td>
+              <td>AKTU, Lucknow</td>
+              <td>8</td>
+              <td>2026</td>
+            </tr>
+            <tr>
+              <td>Bachelor of Science (B.Sc.)</td>
+              <td>IIT, Madras</td>
+              <td>7.89</td>
+              <td>2027</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="mb-4">
+      <div class="section-title">Technical Skills</div>
+      <div class="card p-3">
+        <ul class="skills-list mb-0">
+          <li><strong>Hardware Description Language:</strong> Verilog coding</li>
+          <li><strong>Simulation & Modeling Tools:</strong> MATLAB</li>
+          <li><strong>Circuit Design & Implementation:</strong> Practical circuit work experience</li>
+          <li><strong>Embedded Systems:</strong> Basic microcontrollers & digital logic design</li>
+          <li><strong>Scripting Language:</strong> Python</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mb-4">
+      <div class="section-title">Projects</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h5 class="mb-2">Vending Machine Controller (FSM Logic in Verilog)</h5>
+          <ul>
+            <li>Developed a digital vending machine controller using FSM logic in Verilog.</li>
+            <li>Ensured correct coin recognition and state transitions for seamless product dispensing.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h5 class="mb-2">DC-DC Voltage Booster Circuit</h5>
+          <ul>
+            <li>Designed and implemented a practical DC-DC voltage booster circuit.</li>
+            <li>Tested and optimized for efficiency in low-power applications.</li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h5 class="mb-2">Traffic Light Controller using Verilog</h5>
+          <ul>
+            <li>Designed and implemented a traffic light control system using FSM logic in Verilog.</li>
+            <li>Simulated using ModelSim to validate timing and functionality.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications & Workshops -->
+    <section id="certifications" class="mb-4">
+      <div class="section-title">Certifications & Workshops</div>
+      <div class="card p-3">
+        <ul class="mb-0">
+          <li>Certification in VLSI Design (Internshala)</li>
+          <li>Certification in Industrial Automation and System Design (Skill India)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Extracurricular Activities & Hobbies -->
+    <section id="activities" class="mb-4">
+      <div class="section-title">Extracurricular Activities & Hobbies</div>
+      <div class="card p-3">
+        <ul class="mb-0">
+          <li>Member of the Electronics & Robotics Club</li>
+          <li>Presented research ideas at the "Scrolls" event in college</li>
+          <li>Playing Chess & Cricket, Solving Rubik's Cube</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="declaration">
+      I hereby declare that the information provided above is true and correct to the best of my knowledge.<br>
+      <strong>Prakhar Kaushik</strong>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS for interactivity -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Optional: Smooth scroll for navbar links -->
+  <script>
+    document.querySelectorAll('.navbar-nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          e.preventDefault();
+          window.scrollTo({top: target.offsetTop - 70, behavior: 'smooth'});
+        }
+      });
+    });
+  </script>
+</body>
+</html>
